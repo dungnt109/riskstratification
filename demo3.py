@@ -6,39 +6,42 @@ ws.title("Risk Stratification")
 ws.geometry('1000x800')
 
 var1 = IntVar()
-label1  = Label(ws, text = "text1").grid(row=0, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label1  = Label(ws, text = "**High risk genetic subtype as defined by RNA-Sequencing d, pathogenic TP53 mutation, PAX5-altered (PAX5alt) with ikaros deletion (even if MRD negative tp#1)").grid(row=0, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton1 = Radiobutton(ws, text="Yes", variable=var1, value=1).grid(row=0, column=6)
 rightbutton1 = Radiobutton(ws, text="No", variable=var1, value=2).grid(row=0, column=7)
 
 var2 = IntVar()
-label2  = Label(ws, text = "text2").grid(row=1, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label2  = Label(ws, text = "**Infant ALL (< 1 years old) with CD10-ve and/or MLL-r e").grid(row=1, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton2 = Radiobutton(ws, text="Yes", variable=var2, value=1).grid(row=1, column=6)
 rightbutton2 = Radiobutton(ws, text="No", variable=var2, value=2).grid(row=1, column=7)
 
 var3 = IntVar()
-label3  = Label(ws, text = "text3").grid(row=2, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label3  = Label(ws, text = "*MRD tp#1/D33≥ 1x 10-2").grid(row=2, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton3 = Radiobutton(ws, text="Yes", variable=var3, value=1).grid(row=2, column=6)
 rightbutton3 = Radiobutton(ws, text="No", variable=var3, value=2).grid(row=2, column=7)
 
 var4 = IntVar()
-label4  = Label(ws, text = "text4").grid(row=3, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label4  = Label(ws, text = "**MRD tp#1b/w8 ≥ 1x 10-3").grid(row=3, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton4 = Radiobutton(ws, text="Yes", variable=var4, value=1).grid(row=3, column=6)
 rightbutton4 = Radiobutton(ws, text="No", variable=var4, value=2).grid(row=3, column=7)
 
 var5 = IntVar()
-label5  = Label(ws, text = "text5").grid(row=4, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label5  = Label(ws, text = "**MRD at time point #2/w12 ≥ 1x 10-4").grid(row=4, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton5 = Radiobutton(ws, text="Yes", variable=var5, value=1).grid(row=4, column=6)
 rightbutton5 = Radiobutton(ws, text="No", variable=var5, value=2).grid(row=4, column=7)
 
 var6 = IntVar()
-label6  = Label(ws, text = "text6").grid(row=5, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label6  = Label(ws, text = "**Bilateral testicular ALL").grid(row=5, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton6 = Radiobutton(ws, text="Yes", variable=var6, value=1).grid(row=5, column=6)
 rightbutton6 = Radiobutton(ws, text="No", variable=var6, value=2).grid(row=5, column=7)
 
 var7 = IntVar()
-label7  = Label(ws, text = "text7").grid(row=6, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label7  = Label(ws, text = "**CNS+ beyond first 4 doses of IT MTX").grid(row=6, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton7 = Radiobutton(ws, text="Yes", variable=var7, value=1).grid(row=6, column=6)
 rightbutton7 = Radiobutton(ws, text="No", variable=var7, value=2).grid(row=6, column=7)
+
+
+
 
 var8 = IntVar()
 label8  = Label(ws, text = "text8").grid(row=7, column=0, columnspan=5, sticky=W, padx=6, pady=6)
