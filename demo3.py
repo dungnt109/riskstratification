@@ -44,32 +44,32 @@ rightbutton7 = Radiobutton(ws, text="No", variable=var7, value=2).grid(row=6, co
 
 
 var8 = IntVar()
-label8  = Label(ws, text = "text8").grid(row=7, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label8  = Label(ws, text = "NCI HR (age younger than 1 year OR ≥ 10 years; or WBC ≥50,000/uL)").grid(row=7, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton8 = Radiobutton(ws, text="Yes", variable=var8, value=1).grid(row=7, column=6)
 rightbutton8 = Radiobutton(ws, text="No", variable=var8, value=2).grid(row=7, column=7)
 
 var9 = IntVar()
-label9  = Label(ws, text = "text9").grid(row=8, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label9  = Label(ws, text = "*Ikaros deletion in the absence of any HR criteria").grid(row=8, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton9 = Radiobutton(ws, text="Yes", variable=var9, value=1).grid(row=8, column=6)
 rightbutton9 = Radiobutton(ws, text="No", variable=var9, value=2).grid(row=8, column=7)
 
 var10 = IntVar()
-label10  = Label(ws, text = "text10").grid(row=9, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label10  = Label(ws, text = "MRD tp #1 ≥1x10-4 to <1x10-2 & MRD tp#1b < 1x10-3 & MRD tp#2 negative").grid(row=9, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton10 = Radiobutton(ws, text="Yes", variable=var10, value=1).grid(row=9, column=6)
 rightbutton10 = Radiobutton(ws, text="No", variable=var10, value=2).grid(row=9, column=7)
 
 var11 = IntVar()
-label11  = Label(ws, text = "text11").grid(row=10, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label11  = Label(ws, text = "CNS2, CNS2-TT with blast, CNS3").grid(row=10, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton11 = Radiobutton(ws, text="Yes", variable=var11, value=1).grid(row=10, column=6)
 rightbutton11 = Radiobutton(ws, text="No", variable=var11, value=2).grid(row=10, column=7)
 
 var12 = IntVar()
-label12  = Label(ws, text = "text12").grid(row=11, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label12  = Label(ws, text = "Unilateral testicular ALL").grid(row=11, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton12 = Radiobutton(ws, text="Yes", variable=var12, value=1).grid(row=11, column=6)
 rightbutton12 = Radiobutton(ws, text="No", variable=var12, value=2).grid(row=11, column=7)
 
 var13 = IntVar()
-label13  = Label(ws, text = "text13").grid(row=12, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label13  = Label(ws, text = "No sensitive PCR or flow MRD markerc").grid(row=12, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton13 = Radiobutton(ws, text="Yes", variable=var13, value=1).grid(row=12, column=6)
 rightbutton13 = Radiobutton(ws, text="No", variable=var13, value=2).grid(row=12, column=7)
 
