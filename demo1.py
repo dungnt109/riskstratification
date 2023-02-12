@@ -1,38 +1,24 @@
-from tkinter import * 
-  
-root = Tk()
-root.geometry("300x200")
-  
-w = Label(root, text ='GeeksForGeeks', font = "50") 
-w.pack()
-  
-Checkbutton1 = IntVar()  
-Checkbutton2 = IntVar()  
-Checkbutton3 = IntVar()
-  
-Button1 = Checkbutton(root, text = "Tutorial", 
-                      variable = Checkbutton1,
-                      onvalue = 1,
-                      offvalue = 0,
-                      height = 2,
-                      width = 10)
-  
-Button2 = Checkbutton(root, text = "Student",
-                      variable = Checkbutton2,
-                      onvalue = 1,
-                      offvalue = 0,
-                      height = 2,
-                      width = 10)
-  
-Button3 = Checkbutton(root, text = "Courses",
-                      variable = Checkbutton3,
-                      onvalue = 1,
-                      offvalue = 0,
-                      height = 2,
-                      width = 10)  
-    
-Button1.pack()  
-Button2.pack()  
-Button3.pack()
-  
-mainloop() 
+import tkinter as tk
+
+def show_popup():
+    pop_up = tk.Toplevel()
+    pop_up.withdraw()
+    pop_up.title("Pop-Up Window")
+    width = 300
+    height = 200
+    screen_width = pop_up.winfo_screenwidth()
+    screen_height = pop_up.winfo_screenheight()
+    x = (screen_width/2) - (width/2)
+    y = (screen_height/2) - (height/2)
+    pop_up.geometry("%dx%d+%d+%d" % (width, height, x, y))
+    pop_up.deiconify()
+    label = tk.Label(pop_up, text="This is a pop-up window.")
+    label.pack(pady=10)
+    close_button = tk.Button(pop_up, text="Close", command=pop_up.destroy)
+    close_button.pack()
+
+root = tk.Tk()
+root.title("Main Window")
+show_button = tk.Button(root, text="Show Pop-Up", command=show_popup)
+show_button.pack(pady=10)
+root.mainloop()
