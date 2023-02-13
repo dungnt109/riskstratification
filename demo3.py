@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+import tkinter as tk
 
 ws = Tk()
 ws.title("Risk Stratification")
@@ -14,13 +15,18 @@ def clicked():
 
     	if element.get() == 1: 
 
-    		print("high risk")
+    		show_popup("Risk Stratification: High Risk")
+    		break 
+
 
     for element in intermediateArray: 
 
     	if element.get() == 1: 
 
-    		print("stand risk")
+    		show_popup("Risk Stratification: Intermediate Risk")
+    		break 
+
+ 
 
 
 
@@ -205,6 +211,26 @@ rightbutton27 = Radiobutton(ws, text="No", variable=var27, value=2, command=clic
 
 def close_window():
     root.quit()
+
+
+def show_popup(message):
+    pop_up = tk.Toplevel(root)
+    pop_up.withdraw()
+    pop_up.title("Risk Stratification")
+    width = 600
+    height = 400
+    screen_width = pop_up.winfo_screenwidth()
+    screen_height = pop_up.winfo_screenheight()
+    x = (screen_width/2) - (width/2)
+    y = (screen_height/2) - (height/2)
+    pop_up.geometry("%dx%d" % (width, height))
+    pop_up.deiconify()
+    label = tk.Label(pop_up, text=message)
+    label.pack(pady=10)
+    close_button = tk.Button(pop_up, text="Close", command=pop_up.destroy)
+    close_button.pack()
+
+    pop_up.wm_transient(root)
 
 root = ws
 root.protocol("WM_DELETE_WINDOW", close_window)
