@@ -51,22 +51,22 @@ leftbutton1 = Radiobutton(ws, font=font, text="Yes", variable=var1, value=1, com
 rightbutton1 = Radiobutton(ws, font=font, text="No", variable=var1, value=2, command=clicked).grid(row=0, column=7)
 
 var2 = IntVar()
-label2  = Label(ws, font=font, text = "**Infant ALL (< 1 years old) with CD10-ve and/or MLL-r e").grid(row=1, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label2  = Label(ws, font=font, text = "**Infant ALL (< 1 years old) with CD10-ve and/or MLL-r").grid(row=1, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton2 = Radiobutton(ws, font=font, text="Yes", variable=var2, value=1, command=clicked).grid(row=1, column=6)
 rightbutton2 = Radiobutton(ws, font=font, text="No", variable=var2, value=2, command=clicked).grid(row=1, column=7)
 
 var3 = IntVar()
-label3  = Label(ws, font=font,  text = "*MRD tp#1/D33≥ 1x 10-2").grid(row=2, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label3  = Label(ws, font=font,  text = "*MRD tp#1/D33 ≥ 1x10\u207b\u00b2").grid(row=2, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton3 = Radiobutton(ws, font=font, text="Yes", variable=var3, value=1, command=clicked).grid(row=2, column=6)
 rightbutton3 = Radiobutton(ws, font=font, text="No", variable=var3, value=2, command=clicked).grid(row=2, column=7)
 
 var4 = IntVar()
-label4  = Label(ws, font=font, text = "**MRD tp#1b/w8 ≥ 1x 10-3").grid(row=3, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label4  = Label(ws, font=font, text = "**MRD tp#1b/w8 ≥ 1x 10\u207b\u2074").grid(row=3, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton4 = Radiobutton(ws, font=font, text="Yes", variable=var4, value=1, command=clicked).grid(row=3, column=6)
 rightbutton4 = Radiobutton(ws, font=font, text="No", variable=var4, value=2, command=clicked).grid(row=3, column=7)
 
 var5 = IntVar()
-label5  = Label(ws, font=font, text = "**MRD at time point #2/w12 ≥ 1x 10-4").grid(row=4, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label5  = Label(ws, font=font, text = "**MRD at time point #2/w12 ≥ 1x 10\u207b\u00b3").grid(row=4, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton5 = Radiobutton(ws, font=font, text="Yes", variable=var5, value=1, command=clicked).grid(row=4, column=6)
 rightbutton5 = Radiobutton(ws, font=font, text="No", variable=var5, value=2, command=clicked).grid(row=4, column=7)
 
@@ -88,7 +88,7 @@ separator.grid(row=7,column =0, columnspan=100, sticky="ew")
 
 row = row + 1
 var8 = IntVar()
-label8  = Label(ws, font=font, text = "NCI HR (age younger than 1 year OR ≥ 10 years; or WBC ≥50,000/uL)").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label8  = Label(ws, font=font, text = "NCI HR (age younger than 1 year OR ≥ 10 years; or WBC ≥ 50,000/uL)").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton8 = Radiobutton(ws, font=font, text="Yes", variable=var8, value=1, command=clicked).grid(row=row, column=6)
 rightbutton8 = Radiobutton(ws, font=font, text="No", variable=var8, value=2, command=clicked).grid(row=row, column=7)
 
@@ -100,7 +100,7 @@ rightbutton9 = Radiobutton(ws, font=font, text="No", variable=var9, value=2, com
 
 row = row + 1
 var10 = IntVar()
-label10  = Label(ws, font=font, text = "MRD tp #1 ≥1x10-4 to <1x10-2 & MRD tp#1b < 1x10-3 & MRD tp#2 negative").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label10  = Label(ws, font=font, text = "MRD tp #1 ≥ 1x10\u207b\u2074 to <1x10\u207b\u00b2 & MRD tp#1b < 1x10\u207b\u00b3 & MRD tp#2 negative").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton10 = Radiobutton(ws, font=font, text="Yes", variable=var10, value=1, command=clicked).grid(row=row, column=6)
 rightbutton10 = Radiobutton(ws, font=font, text="No", variable=var10, value=2, command=clicked).grid(row=row, column=7)
 
@@ -118,7 +118,7 @@ rightbutton12 = Radiobutton(ws, font=font, text="No", variable=var12, value=2, c
 
 row = row + 1
 var13 = IntVar()
-label13  = Label(ws, font=font, text = "No sensitive PCR or flow MRD markerc").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label13  = Label(ws, font=font, text = "No sensitive PCR or flow MRD marker").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton13 = Radiobutton(ws, font=font, text="Yes", variable=var13, value=1, command=clicked).grid(row=row, column=6)
 rightbutton13 = Radiobutton(ws, font=font, text="No", variable=var13, value=2, command=clicked).grid(row=row, column=7)
 
@@ -155,7 +155,7 @@ rightbutton17 = Radiobutton(ws, font=font, text="No", variable=var17, value=2, c
 
 row = row + 1
 var18 = IntVar()
-label18  = Label(ws, font=font, text = "MRD tp#1 ≤1x 10-4 and tp#1b negative a").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label18  = Label(ws, font=font, text = "MRD tp#1 ≤ 1x 10\u207b\u2074 and tp#1b negative").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton18 = Radiobutton(ws, font=font, text="Yes", variable=var18, value=1, command=clicked).grid(row=row, column=6)
 rightbutton18 = Radiobutton(ws, font=font, text="No", variable=var18, value=2, command=clicked).grid(row=row, column=7)
 
