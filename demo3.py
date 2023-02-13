@@ -33,7 +33,7 @@ def clicked():
     	if element.get() != 1: 
 
     		flag = False 
-    		
+
     if flag: 
 
     		show_popup("Risk Stratification: Standard Risk")
@@ -190,7 +190,7 @@ def show_popup(message):
     label = tk.Label(pop_up, text=message)
     label.pack(pady=10)
     close_button = tk.Button(pop_up, text="Close", command=pop_up.destroy)
-    close_button.pack()
+    close_button.pack(side="bottom", padx=30, pady=30)
 
     pop_up.wm_transient(root)
 
