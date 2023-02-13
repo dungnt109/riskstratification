@@ -61,12 +61,12 @@ leftbutton3 = Radiobutton(ws, font=font, text="Yes", variable=var3, value=1, com
 rightbutton3 = Radiobutton(ws, font=font, text="No", variable=var3, value=2, command=clicked).grid(row=2, column=7)
 
 var4 = IntVar()
-label4  = Label(ws, font=font, text = "**MRD tp#1b/w8 ≥ 1x 10\u207b\u2074").grid(row=3, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label4  = Label(ws, font=font, text = "**MRD tp#1b/w8 ≥ 1x10\u207b\u2074").grid(row=3, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton4 = Radiobutton(ws, font=font, text="Yes", variable=var4, value=1, command=clicked).grid(row=3, column=6)
 rightbutton4 = Radiobutton(ws, font=font, text="No", variable=var4, value=2, command=clicked).grid(row=3, column=7)
 
 var5 = IntVar()
-label5  = Label(ws, font=font, text = "**MRD at time point #2/w12 ≥ 1x 10\u207b\u00b3").grid(row=4, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label5  = Label(ws, font=font, text = "**MRD at time point #2/w12 ≥ 1x10\u207b\u00b3").grid(row=4, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton5 = Radiobutton(ws, font=font, text="Yes", variable=var5, value=1, command=clicked).grid(row=4, column=6)
 rightbutton5 = Radiobutton(ws, font=font, text="No", variable=var5, value=2, command=clicked).grid(row=4, column=7)
 
