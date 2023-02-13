@@ -16,7 +16,7 @@ def clicked():
     	if element.get() == 1: 
 
     		show_popup("Risk Stratification: High Risk")
-    		break 
+    		return  
 
 
     for element in intermediateArray: 
@@ -24,7 +24,22 @@ def clicked():
     	if element.get() == 1: 
 
     		show_popup("Risk Stratification: Intermediate Risk")
-    		break 
+    		return 
+
+    flag = True
+
+    for element in standardArray: 
+
+    	if element.get() != 1: 
+
+    		flag = False 
+    		
+    if flag: 
+
+    		show_popup("Risk Stratification: Standard Risk")
+    		return  
+
+
 
  
 
@@ -147,59 +162,6 @@ rightbutton18 = Radiobutton(ws, text="No", variable=var18, value=2, command=clic
 
 standardArray = [var14, var15, var16, var17, var18]
 
-row = row + 1
-var19 = IntVar()
-label19  = Label(ws, text = "text19").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
-leftbutton19 = Radiobutton(ws, text="Yes", variable=var19, value=1, command=clicked).grid(row=row, column=6)
-rightbutton19 = Radiobutton(ws, text="No", variable=var19, value=2, command=clicked).grid(row=row, column=7)
-
-row = row + 1
-var20 = IntVar()
-label20  = Label(ws, text = "text20").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
-leftbutton20 = Radiobutton(ws, text="Yes", variable=var20, value=1, command=clicked).grid(row=row, column=6)
-rightbutton20 = Radiobutton(ws, text="No", variable=var20, value=2, command=clicked).grid(row=row, column=7)
-
-row = row + 1
-var21 = IntVar()
-label21  = Label(ws, text = "text21").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
-leftbutton21 = Radiobutton(ws, text="Yes", variable=var21, value=1, command=clicked).grid(row=row, column=6)
-rightbutton21 = Radiobutton(ws, text="No", variable=var21, value=2, command=clicked).grid(row=row, column=7)
-
-row = row + 1
-var22 = IntVar()
-label22  = Label(ws, text = "text22").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
-leftbutton22 = Radiobutton(ws, text="Yes", variable=var22, value=1, command=clicked).grid(row=row, column=6)
-rightbutton22 = Radiobutton(ws, text="No", variable=var22, value=2, command=clicked).grid(row=row, column=7)
-
-row = row + 1
-var23 = IntVar()
-label23  = Label(ws, text = "text23").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
-leftbutton23 = Radiobutton(ws, text="Yes", variable=var23, value=1, command=clicked).grid(row=row, column=6)
-rightbutton23 = Radiobutton(ws, text="No", variable=var23, value=2, command=clicked).grid(row=row, column=7)
-
-row = row + 1
-var24 = IntVar()
-label24  = Label(ws, text = "text24").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
-leftbutton24 = Radiobutton(ws, text="Yes", variable=var24, value=1, command=clicked).grid(row=row, column=6)
-rightbutton24 = Radiobutton(ws, text="No", variable=var24, value=2, command=clicked).grid(row=row, column=7)
-
-row = row + 1
-var25 = IntVar()
-label25  = Label(ws, text = "text25").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
-leftbutton25 = Radiobutton(ws, text="Yes", variable=var25, value=1, command=clicked).grid(row=row, column=6)
-rightbutton25 = Radiobutton(ws, text="No", variable=var25, value=2, command=clicked).grid(row=row, column=7)
-
-row = row + 1
-var26 = IntVar()
-label26  = Label(ws, text = "text26").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
-leftbutton26 = Radiobutton(ws, text="Yes", variable=var26, value=1, command=clicked).grid(row=row, column=6)
-rightbutton26 = Radiobutton(ws, text="No", variable=var26, value=2, command=clicked).grid(row=row, column=7)
-
-row = row + 1
-var27 = IntVar()
-label27  = Label(ws, text = "text27").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
-leftbutton27 = Radiobutton(ws, text="Yes", variable=var27, value=1, command=clicked).grid(row=row, column=6)
-rightbutton27 = Radiobutton(ws, text="No", variable=var27, value=2, command=clicked).grid(row=row, column=7)
 
 
 
