@@ -42,31 +42,31 @@ def clicked():
 
 
  
-font = ("Arial", 15)
+font = ("Arial", 10)
 
 
 var1 = IntVar()
-label1  = Label(ws, font=font, text = "**High risk genetic subtype as defined by RNA-Sequencing d, pathogenic TP53 mutation, \nPAX5-altered (PAX5alt) with ikaros deletion (even if MRD negative tp#1)").grid(row=0, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label1  = Label(ws, font=font, text = "High risk genetic subtype as defined by RNA-Sequencing, pathogenic TP53 mutation, \nPAX5-altered (PAX5alt) with ikaros deletion (even if MRD negative tp#1)").grid(row=0, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton1 = Radiobutton(ws, font=font, text="Yes", variable=var1, value=1, command=clicked).grid(row=0, column=6)
 rightbutton1 = Radiobutton(ws, font=font, text="No", variable=var1, value=2, command=clicked).grid(row=0, column=7)
 
 var2 = IntVar()
-label2  = Label(ws, font=font, text = "**Infant ALL (< 1 years old) with CD10-ve and/or MLL-r").grid(row=1, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label2  = Label(ws, font=font, text = "Infant ALL (< 1 years old) with CD10-ve and/or MLL-r").grid(row=1, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton2 = Radiobutton(ws, font=font, text="Yes", variable=var2, value=1, command=clicked).grid(row=1, column=6)
 rightbutton2 = Radiobutton(ws, font=font, text="No", variable=var2, value=2, command=clicked).grid(row=1, column=7)
 
 var3 = IntVar()
-label3  = Label(ws, font=font,  text = "*MRD tp#1/D33 ≥ 1x10\u207b\u00b2").grid(row=2, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label3  = Label(ws, font=font,  text = "MRD tp#1/D33 ≥ 1x10\u207b\u00b2").grid(row=2, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton3 = Radiobutton(ws, font=font, text="Yes", variable=var3, value=1, command=clicked).grid(row=2, column=6)
 rightbutton3 = Radiobutton(ws, font=font, text="No", variable=var3, value=2, command=clicked).grid(row=2, column=7)
 
 var4 = IntVar()
-label4  = Label(ws, font=font, text = "**MRD tp#1b/w8 ≥ 1x10\u207b\u2074").grid(row=3, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label4  = Label(ws, font=font, text = "MRD tp#1b/w8 ≥ 1x10\u207b\u00b3").grid(row=3, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton4 = Radiobutton(ws, font=font, text="Yes", variable=var4, value=1, command=clicked).grid(row=3, column=6)
 rightbutton4 = Radiobutton(ws, font=font, text="No", variable=var4, value=2, command=clicked).grid(row=3, column=7)
 
 var5 = IntVar()
-label5  = Label(ws, font=font, text = "**MRD at time point #2/w12 ≥ 1x10\u207b\u00b3").grid(row=4, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label5  = Label(ws, font=font, text = "MRD at time point #2/w12 ≥ 1x10\u207b\u2074").grid(row=4, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton5 = Radiobutton(ws, font=font, text="Yes", variable=var5, value=1, command=clicked).grid(row=4, column=6)
 rightbutton5 = Radiobutton(ws, font=font, text="No", variable=var5, value=2, command=clicked).grid(row=4, column=7)
 
@@ -76,7 +76,7 @@ leftbutton6 = Radiobutton(ws, font=font, text="Yes", variable=var6, value=1, com
 rightbutton6 = Radiobutton(ws, font=font, text="No", variable=var6, value=2, command=clicked).grid(row=5, column=7)
 
 var7 = IntVar()
-label7  = Label(ws, font=font, text = "**CNS+ beyond first 4 doses of IT MTX").grid(row=6, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label7  = Label(ws, font=font, text = "CNS+ beyond first 4 doses of IT MTX").grid(row=6, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton7 = Radiobutton(ws, font=font, text="Yes", variable=var7, value=1, command=clicked).grid(row=6, column=6)
 rightbutton7 = Radiobutton(ws, font=font, text="No", variable=var7, value=2, command=clicked).grid(row=6, column=7)
 
@@ -94,7 +94,7 @@ rightbutton8 = Radiobutton(ws, font=font, text="No", variable=var8, value=2, com
 
 row = row + 1
 var9 = IntVar()
-label9  = Label(ws, font=font, text = "*Ikaros deletion in the absence of any HR criteria").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
+label9  = Label(ws, font=font, text = "Ikaros deletion in the absence of any HR criteria").grid(row=row, column=0, columnspan=5, sticky=W, padx=6, pady=6)
 leftbutton9 = Radiobutton(ws, font=font, text="Yes", variable=var9, value=1, command=clicked).grid(row=row, column=6)
 rightbutton9 = Radiobutton(ws, font=font, text="No", variable=var9, value=2, command=clicked).grid(row=row, column=7)
 
