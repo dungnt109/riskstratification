@@ -7,6 +7,7 @@ import tkinter as tk
 def first_window(): 
 
         root = Tk()
+        root.eval('tk::PlaceWindow . center')
 
         root.title('Select')
 
@@ -44,8 +45,17 @@ def second_window(time_point):
 
 
     root = Tk()
+    
     root.title("Risk Stratification: " + time_point)
-    root.geometry('1000x750')
+    
+    ws = root.winfo_screenwidth()
+    hs = root.winfo_screenheight()
+    w = 1000
+    h = 750 
+    x = (ws/2) - (w/2)
+    y = (hs/2) - (h/2)
+    root.geometry('%dx%d+%d+%d' % (w, h, x, y))
+ 
 
     # Create A Main frame
 
@@ -323,7 +333,7 @@ def second_window(time_point):
         screen_height = pop_up.winfo_screenheight()
         x = (screen_width/2) - (width/2)
         y = (screen_height/2) - (height/2)
-        pop_up.geometry("%dx%d" % (width, height))
+        pop_up.geometry("%dx%d+%d+%d" % (width, height, x, y))
         pop_up.deiconify()
         label = tk.Label(pop_up, text=message, font=("Arial", 18))
         label.place(relx=0.5, rely=0.5, anchor=CENTER)
